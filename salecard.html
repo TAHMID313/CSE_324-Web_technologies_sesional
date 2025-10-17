@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Data</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/9e9cb6d1bc.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-base-200 min-h-screen flex flex-col items-center justify-center p-6">
+
+  <h2 class="text-3xl font-bold mb-6 text-primary">Company Data Table</h2>
+
+  <div class="overflow-x-auto w-full max-w-4xl">
+    <table class="table table-zebra w-full border border-base-300 rounded-lg shadow-lg">
+      <thead class="bg-primary text-white text-lg">
+        <tr>
+          <th>No.</th>
+          <th>Full Name</th>
+          <th>Position</th>
+          <th>Salary</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gates</td>
+          <td>Founder Microsoft</td>
+          <td>$1000</td>
+          <td rowspan="4" class="align-middle text-center font-semibold bg-base-300">Company Founder</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Steve Jobs</td>
+          <td>Founder Apple</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry Page</td>
+          <td>Founder Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zuckerberg</td>
+          <td>Founder Facebook</td>
+          <td>$1300</td>
+        </tr>
+      </tbody>
+      <tfoot class="bg-base-300 font-semibold">
+        <tr>
+            <td></td>
+            <td colspan="2">Total Expense:</td>
+            <td>$4600</td>
+
+            <!-- <td colspan="2" class="text-center"></td>
+          <td>Total Expense:</td>
+          <td></td>
+          <td>$4600</td> -->
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+</body>
